@@ -2,14 +2,14 @@
 library(plyr, dplyr, reshape)
 
 #0.2 Read data from files
-  #test_subjects <- read.table("UCI HAR Dataset/test/subject_test.txt")
-  #train_subjects <- read.table("UCI HAR Dataset/train/subject_train.txt")
-  #test_X <- read.table("UCI HAR Dataset/test/X_test.txt")
-  #train_X <- read.table("UCI HAR Dataset/train/X_train.txt")
-  #test_Y <- read.table("UCI HAR Dataset/test/Y_test.txt")
-  #train_Y <- read.table("UCI HAR Dataset/train/Y_train.txt")
-  #features <- read.table("UCI HAR Dataset/features.txt")
-  #activities <- read.table("UCI HAR Dataset/activity_labels.txt")
+  test_subjects <- read.table("UCI HAR Dataset/test/subject_test.txt")
+  train_subjects <- read.table("UCI HAR Dataset/train/subject_train.txt")
+  test_X <- read.table("UCI HAR Dataset/test/X_test.txt")
+  train_X <- read.table("UCI HAR Dataset/train/X_train.txt")
+  test_Y <- read.table("UCI HAR Dataset/test/Y_test.txt")
+  train_Y <- read.table("UCI HAR Dataset/train/Y_train.txt")
+  features <- read.table("UCI HAR Dataset/features.txt")
+  activities <- read.table("UCI HAR Dataset/activity_labels.txt")
 
 
 # .:STEP 1:. Merge the training and test sets to create one data set
