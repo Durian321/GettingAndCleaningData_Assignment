@@ -1,5 +1,94 @@
-Feature Selection 
-=================
+CODE BOOK:
+
+The tidy data frame contains the following variables:
+
+
+INDEX	VARIABLE NAME			VARIABLE DESCRIPTION
+
+1	Subject	Subject ID 		Number, integer between 1 and 30
+2	Activity			Activity conducted by subject, either WALKING, WALKING_UPSTAIRS, 
+					WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+3	tBodyAcc-mean()-X		Floating point number, Units: Metres per second squared
+4	tBodyAcc-mean()-Y		Floating point number, Units: Metres per second squared
+5	tBodyAcc-mean()-Z		Floating point number, Units: Metres per second squared
+6	tBodyAcc-std()-X		Floating point number, Units: Metres per second squared
+7	tBodyAcc-std()-Y		Floating point number, Units: Metres per second squared
+8	tBodyAcc-std()-Z		Floating point number, Units: Metres per second squared
+9	tGravityAcc-mean()-X		Floating point number, Units: Metres per second squared
+10	tGravityAcc-mean()-Y		Floating point number, Units: Metres per second squared
+11	tGravityAcc-mean()-Z		Floating point number, Units: Metres per second squared
+12	tGravityAcc-std()-X		Floating point number, Units: Metres per second squared
+13	tGravityAcc-std()-Y		Floating point number, Units: Metres per second squared
+14	tGravityAcc-std()-Z		Floating point number, Units: Metres per second squared
+15	tBodyAccJerk-mean()-X		Floating point number, Units: Metres per second squared
+16	tBodyAccJerk-mean()-Y		Floating point number, Units: Metres per second squared
+17	tBodyAccJerk-mean()-Z		Floating point number, Units: Metres per second squared
+18	tBodyAccJerk-std()-X		Floating point number, Units: Metres per second squared
+19	tBodyAccJerk-std()-Y		Floating point number, Units: Metres per second squared
+20	tBodyAccJerk-std()-Z		Floating point number, Units: Metres per second squared
+21	tBodyGyro-mean()-X		Floating point number, Units: Radians per second
+22	tBodyGyro-mean()-Y		Floating point number, Units: Radians per second
+23	tBodyGyro-mean()-Z		Floating point number, Units: Radians per second
+24	tBodyGyro-std()-X		Floating point number, Units: Radians per second
+25	tBodyGyro-std()-Y		Floating point number, Units: Radians per second
+26	tBodyGyro-std()-Z		Floating point number, Units: Radians per second
+27	tBodyGyroJerk-mean()-X		Floating point number, Units: Radians per second cubed
+28	tBodyGyroJerk-mean()-Y		Floating point number, Units: Radians per second cubed
+29	tBodyGyroJerk-mean()-Z		Floating point number, Units: Radians per second cubed
+30	tBodyGyroJerk-std()-X		Floating point number, Units: Radians per second cubed
+31	tBodyGyroJerk-std()-Y		Floating point number, Units: Radians per second cubed
+32	tBodyGyroJerk-std()-Z		Floating point number, Units: Radians per second cubed
+33	tBodyAccMag-mean()		Floating point number, Units: Metres per second squared
+34	tBodyAccMag-std()		Floating point number, Units: Metres per second squared
+35	tGravityAccMag-mean()		Floating point number, Units: Metres per second squared
+36	tGravityAccMag-std()		Floating point number, Units: Metres per second squared
+37	tBodyAccJerkMag-mean()		Floating point number, Units: Radians per second cubed
+38	tBodyAccJerkMag-std()		Floating point number, Units: Radians per second cubed
+40	tBodyGyroMag-std()		Floating point number, Units: Radians per second cubed
+41	tBodyGyroJerkMag-mean()		Floating point number, Units: Radians per second cubed
+42	tBodyGyroJerkMag-std()		Floating point number, Units: Radians per second cubed
+43	fBodyAcc-mean()-X		Floating point number, Units: Metres per second squared
+44	fBodyAcc-mean()-Y		Floating point number, Units: Metres per second squared
+45	fBodyAcc-mean()-Z		Floating point number, Units: Metres per second squared
+46	fBodyAcc-std()-X		Floating point number, Units: Metres per second squared
+47	fBodyAcc-std()-Y		Floating point number, Units: Metres per second squared
+48	fBodyAcc-std()-Z		Floating point number, Units: Metres per second squared
+49	fBodyAcc-meanFreq()-X		Floating point number, Units: Metres per second squared
+50	fBodyAcc-meanFreq()-Y		Floating point number, Units: Metres per second squared
+51	fBodyAcc-meanFreq()-Z		Floating point number, Units: Metres per second squared
+52	fBodyAccJerk-mean()-X		Floating point number, Units: Metres per second squared
+53	fBodyAccJerk-mean()-Y		Floating point number, Units: Metres per second squared
+54	fBodyAccJerk-mean()-Z		Floating point number, Units: Metres per second squared
+55	fBodyAccJerk-std()-X		Floating point number, Units: Metres per second squared
+56	fBodyAccJerk-std()-Y		Floating point number, Units: Metres per second squared
+57	fBodyAccJerk-std()-Z		Floating point number, Units: Metres per second squared
+58	fBodyAccJerk-meanFreq()-X	Floating point number, Units: Metres per second squared
+59	fBodyAccJerk-meanFreq()-Y	Floating point number, Units: Metres per second squared
+60	fBodyAccJerk-meanFreq()-Z	Floating point number, Units: Metres per second squared
+61	fBodyGyro-mean()-X		Floating point number, Units: Radians per second
+62	fBodyGyro-mean()-Y		Floating point number, Units: Radians per second
+63	fBodyGyro-mean()-Z		Floating point number, Units: Radians per second
+64	fBodyGyro-std()-X		Floating point number, Units: Radians per second
+65	fBodyGyro-std()-Y		Floating point number, Units: Radians per second
+66	fBodyGyro-std()-Z		Floating point number, Units: Radians per second
+67	fBodyGyro-meanFreq()-X		Floating point number, Units: Radians per second
+68	fBodyGyro-meanFreq()-Y		Floating point number, Units: Radians per second
+69	fBodyGyro-meanFreq()-Z		Floating point number, Units: Radians per second
+70	fBodyAccMag-mean()		Floating point number, Units: Metres per second squared
+71	fBodyAccMag-std()		Floating point number, Units: Metres per second squared
+72	fBodyAccMag-meanFreq()		Floating point number, Units: Metres per second squared
+73	fBodyBodyAccJerkMag-mean()	Floating point number, Units: Metres per second squared
+74	fBodyBodyAccJerkMag-std()	Floating point number, Units: Metres per second squared
+75	fBodyBodyAccJerkMag-meanFreq()	Floating point number, Units: Metres per second squared
+76	fBodyBodyGyroMag-mean()		Floating point number, Units: Radians per second
+77	fBodyBodyGyroMag-std()		Floating point number, Units: Radians per second
+78	fBodyBodyGyroMag-meanFreq()	Floating point number, Units: Radians per second
+79	fBodyBodyGyroJerkMag-mean()	Floating point number, Units: Radians per second cubed
+80	fBodyBodyGyroJerkMag-std()	Floating point number, Units: Radians per second cubed
+81	fBodyBodyGyroJerkMag-meanFreq()	Floating point number, Units: Radians per second cubed
+
+
+NOTES:
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -28,9 +117,6 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-The mean and standard deviations of these variables are stored in the tidy data frame. 
-
-
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
 gravityMean
@@ -39,3 +125,4 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
+The mean and standard deviations of these variables were then calculated and stored in a separate, independent tidy data frame.
